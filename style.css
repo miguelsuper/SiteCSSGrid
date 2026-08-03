@@ -152,6 +152,7 @@ html {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;                          
     justify-items: center;
+    gap: 2rem;
     
 }
 
@@ -161,4 +162,77 @@ html {
     font-size: 3rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.galeria img{
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.oferta h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.oferta p{
+    color: rgb(21, 21, 96);
+}
+
+.formulario{
+    background-color: white;
+    margin-left: 3.5rem;
+    width: 90%;
+    padding: 1rem;
+    margin: 3rem;
+    border-radius: 1rem;
+    color: rgb(33, 33, 143);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(3, auto);                          
+    justify-items: center;
+    gap: 2rem;
+}
+
+.formulario h1{
+    grid-template-rows: 1 / -1;
+    font-weight: 800;
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+.formulario input{
+    height: 3rem;
+    width: 50%;
+    border-radius: 0.75rem;
+    border: 1px solid black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.formulario textarea{
+    height: 10rem;
+    width: 50%;
+    border-radius: 0.75rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.formulario button{
+    width: 25%;
+    height: 5rem;
+    color: white;
+    background-color: rgb(33, 33, 143);
+    border: none;
+    border-radius: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 1rem;
+    margin-top: -0.8rem;
+    font-size: 1.5rem;
+}
+
+.formulario button:hover{
+    background-color: rgb(21, 21, 96);
+    transform: scale(1.02);
 }
