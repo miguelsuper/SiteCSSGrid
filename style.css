@@ -138,3 +138,27 @@ p{
 html {
     scroll-behavior: smooth;
 }
+
+.galeria {
+    background-color: white;
+    margin-left: 3.5rem;
+    width: 90%;
+    padding: 1rem;
+    margin: 3rem;
+    border-radius: 1rem;
+    color: rgb(33, 33, 143);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;                          
+    justify-items: center;
+    
+}
+
+.galeria h1{
+    grid-column: 1 / -1; 
+    font-weight: 800;
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
