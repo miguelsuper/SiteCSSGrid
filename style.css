@@ -1,44 +1,58 @@
-body{
+
+body {
     display: grid;
     grid-template-rows: auto auto auto;
-    color: rgb(0, 0, 0);
-    background-color: rgb(33, 33, 143);
+    color: #ffffff;
+    background-color: #0b0f19;
     margin: 0;
     padding: 0;
 }
 
-.container{
+.container {
     display: grid;
     grid-template-columns: 10fr 2fr;
 }
 
-header{
+header {
     grid-row: 1;
-    background-color: white;
+    background-color: #050811;
     text-align: left;
+    border-bottom: 2px solid #0066ff;
+    display: grid;
+    grid-template-columns: 14fr 2fr;
+    justify-items: left;
 }
 
-header h1{
+header img{
+    width: 75%;
     margin: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 7rem;
-    font-weight:800;
-    color: rgb(33, 33, 143);
-    margin-left: 2rem;
-
+    margin-top: -5rem;
 }
 
-header p{
+header h1 {
+    grid-column: 1;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 7rem;
+    font-weight: 800;
+    margin-left: 2rem;
+    color: #0088ff;
+}
+
+header p {
+    grid-column: 1;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2rem;
     margin-top: -20px;
-    color: rgb(21, 21, 96);
+    color: #8abbff;
     margin-left: 3.5rem;
+    margin-right: 25rem;
 }
 
-aside{
+aside {
     grid-column: 2/3;
-    background-color: rgb(213, 213, 213);
+    background-color: #070c16;
+    border-left: 1px solid #1a2638;
 
     display: grid;
     grid-template-columns: 1fr;
@@ -47,92 +61,96 @@ aside{
     justify-items: center;
 }
 
-aside button{
+aside button {
     width: 50%;
     margin-top: 20px;
     height: 3rem;
-    color: white;
-    background-color: rgb(33, 33, 143);
-    border: none;
+    color: #ffffff;
+    background-color: #050811;
+    border: 2px solid #0066ff;
     border-radius: 0.5rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
     cursor: pointer;
-    transition: 0.2s;
+    transition: all 0.2s ease;
 }
 
-aside button:hover{
-    background-color: rgb(21, 21, 96);
-    transform: scale(1.02);
+aside button:hover {
+    background-color: #0066ff;
+    color: #ffffff;
+    transform: scale(1.03);
 }
 
-footer{
-    background-color: white;
+footer {
+    background-color: #050811;
+    border-top: 1px solid #1a2638;
 }
 
-.conteudo{
-   background-color: white;
-   color: rgb(33, 33, 143);
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   text-align: left; 
-   font-size: 1.3rem;
-   margin-left: 3.5rem;
-   width: 90%;
-   padding: 1rem;
-   margin: 3rem;
-   border-radius: 1rem;
-
-}
-
-.conteudo h1{
-    font-size: 3rem;
-    font-weight: 800;
-    margin-top: 1rem;
-    margin-bottom: -1rem;
-}
-
-p{
-    color: rgb(21, 21, 96);
-}
-
-.anuncios{
-    background-color: white;
+.conteudo {
+    background-color: #070c16;
+    color: #e1e7ef;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left; 
+    font-size: 1.3rem;
     margin-left: 3.5rem;
     width: 90%;
     padding: 1rem;
     margin: 3rem;
     border-radius: 1rem;
-    color: rgb(33, 33, 143);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-
+    border: 1px solid #1a2638;
 }
 
-.anuncios h1{
+.conteudo h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+    color: #0088ff;
+}
+
+p {
+    color: #b0c4de;
+}
+
+.anuncios {
+    background-color: #070c16;
+    margin-left: 3.5rem;
+    width: 90%;
+    padding: 1rem;
+    margin: 3rem;
+    border-radius: 1rem;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    border: 1px solid #1a2638;
+}
+
+.anuncios h1 {
     font-weight: 800;
     font-size: 3rem;
     margin-top: 1rem;
+    color: #0088ff;
 }
 
-.anuncios button{
+.anuncios button {
     width: 25%;
     height: 5rem;
-    color: white;
-    background-color: rgb(33, 33, 143);
-    border: none;
+    color: #ffffff;
+    background-color: #050811;
+    border: 2px solid #0066ff;
     border-radius: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1rem;
     cursor: pointer;
-    transition: 0.2s;
+    transition: all 0.2s ease;
     margin: 1rem;
     margin-top: -0.8rem;
     font-size: 1.5rem;
 }
 
-.anuncios button:hover{
-    background-color: rgb(21, 21, 96);
-    transform: scale(1.02);
+.anuncios button:hover {
+    background-color: #0066ff;
+    color: #ffffff;
+    transform: scale(1.03);
 }
 
 html {
@@ -140,99 +158,124 @@ html {
 }
 
 .galeria {
-    background-color: white;
+    background-color: #070c16;
     margin-left: 3.5rem;
     width: 90%;
     padding: 1rem;
     margin: 3rem;
     border-radius: 1rem;
-    color: rgb(33, 33, 143);
+    color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;                          
     justify-items: center;
     gap: 2rem;
-    
+    border: 1px solid #1a2638;
 }
 
-.galeria h1{
+.galeria h1 {
     grid-column: 1 / -1; 
     font-weight: 800;
     font-size: 3rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    color: #0088ff;
 }
 
-.galeria img{
+.galeria img {
     object-fit: cover;
     border-radius: 1rem;
+    border: 2px solid #0066ff;
+    transition: transform 0.2s ease;
 }
 
-.oferta h1{
+.galeria img:hover {
+    transform: scale(1.03);
+}
+
+.oferta h1 {
     font-size: 1.5rem;
     font-weight: 700;
+    color: #0088ff;
 }
 
-.oferta p{
-    color: rgb(21, 21, 96);
+.oferta p {
+    color: #b0c4de;
 }
 
-.formulario{
-    background-color: white;
+.formulario {
+    background-color: #070c16;
     margin-left: 3.5rem;
     width: 90%;
     padding: 1rem;
     margin: 3rem;
     border-radius: 1rem;
-    color: rgb(33, 33, 143);
+    color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     display: grid;
     grid-template-rows: repeat(3, auto);                          
     justify-items: center;
     gap: 2rem;
+    border: 1px solid #1a2638;
 }
 
-.formulario h1{
+.formulario h1 {
     grid-template-rows: 1 / -1;
     font-weight: 800;
     font-size: 3rem;
     margin-top: 1rem;
+    color: #0088ff;
 }
 
-.formulario input{
+.formulario input {
     height: 3rem;
     width: 50%;
     border-radius: 0.75rem;
-    border: 1px solid black;
+    border: 1px solid #0066ff;
+    background-color: #050811;
+    color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 0.75rem;
+    outline: none;
 }
 
-.formulario textarea{
+.formulario textarea {
     height: 10rem;
     width: 50%;
     border-radius: 0.75rem;
+    border: 1px solid #0066ff;
+    background-color: #050811;
+    color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0.75rem;
+    outline: none;
 }
 
-.formulario button{
+.formulario button {
     width: 25%;
     height: 5rem;
-    color: white;
-    background-color: rgb(33, 33, 143);
-    border: none;
+    color: #ffffff;
+    background-color: #050811;
+    border: 2px solid #0066ff;
     border-radius: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1rem;
     cursor: pointer;
-    transition: 0.2s;
+    transition: all 0.2s ease;
     margin: 1rem;
     margin-top: -0.8rem;
     font-size: 1.5rem;
 }
 
-.formulario button:hover{
-    background-color: rgb(21, 21, 96);
-    transform: scale(1.02);
+.formulario button:hover {
+    background-color: #0066ff;
+    color: #ffffff;
+    transform: scale(1.03);
+}
+
+footer {
+    height: 5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #8abbff;
 }
